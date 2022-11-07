@@ -1,0 +1,32 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+#firstname {
+    font-size: 1.5rem;
+    font-family: 'Pacifico', cursive;
+    font-weight: bolder;
+    color: #ffffff;
+    padding: 0 4px 1.5px 4px;
+    margin: 0;
+    border: 5px solid rgba($secondary, 0.95);
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+#firstname:hover {
+    color: lightskyblue;
+    @include gradient;
+    border: 5px solid rgba(237, 200, 237, 0.603);
+}
+
+.menu {
+    @include gradient;
+    li {
+        padding: 0 0.7rem;
+    }
+    a{
+        color: $white !important;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+}
